@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>TypeScript + JSPM + React</title>
+    <style>
+        body { font-family: sans-serif; }
+        h1 { padding: 20px 0; }
+        .noselect {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Example 9</h1>
+    <div id="content"></div>
+
+    <script src="system.js"></script>
+    <script src="config.js"></script>
+    
+    <script src="/app.js"></script>
+
+    <script>
+        System.import("./src/app");
+    </script>
+</body>
+</html>
