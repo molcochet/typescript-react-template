@@ -236,10 +236,10 @@ export default class HelloWorld extends React.Component<any, any> {
 
     render() {
         return (
-            <div className="form-group">
-                <input type="text" placeholder="Your name" onChange={e => this.update(e)} className="form-control" />
-                <h3>{this.state.yourName}</h3>
-            </div>);
+          <div className="form-group">
+            <input type="text" placeholder="Your name" onChange={e=>this.update(e)} className="form-control"/>
+            <h3>{this.state.yourName}</h3>
+          </div>);
     }
 }
 ```
