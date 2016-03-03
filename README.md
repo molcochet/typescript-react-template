@@ -36,23 +36,34 @@ split into hundreds of **micro modules** (often only containing a single functio
 is that **creating a template can take minutes**, so it's a good time to sit back, relax and continue ahead 
 read the rest of this guide :) 
 
+For the purposes of this guide we'll assume you've created a project called **NetworkedShapeCreator** which 
+we'll walk through creating the final **Networked Time Travelling Shape Creator** example seen below:
+
 ## [TypeScript Redux](https://github.com/ServiceStackApps/typescript-redux)
 
 To help familiarize with these modern technologies we've published an in-depth step-by-step guide for beginners 
 that starts off building the simplest HelloWorld TypeScript React App from scratch then slowly growing with 
 each example explaining how TypeScript, React and Redux can be used to easily create more complex Apps.
 
-This guide walks through the final networked Time Travelling Shape Creator example seen below:
-
 [![](https://raw.githubusercontent.com/ServiceStackApps/typescript-redux/master/img/preview-09.png)](https://github.com/ServiceStackApps/typescript-redux)
 
 > Live Demo: [http://redux.servicestack.net](http://redux.servicestack.net)
+
+If you need to refer to it, the source code for this guide is available from the
+[/src folder of this GitHub Repository](https://github.com/ServiceStackApps/typescript-react-template/tree/master/src).
 
 ## Build and Run the default template
 
 Even after the template is loaded in Visual Studio you'll need to wait until npm completes: 
 
 ![](https://raw.githubusercontent.com/ServiceStackApps/typescript-react-template/master/img/ServiceStackVS-npm-output.png)
+
+After it successfully completes you can **Rebuild + Run** the solution to see a working client/server 
+Hello World App:
+
+![](https://raw.githubusercontent.com/ServiceStackApps/typescript-react-template/master/img/default-app.png)
+
+### Troubleshooting
 
 If one of the many npm packages happens to fail to install during the creation of the template, the easiest way
 to resolve the issue is to delete npm's **node_modules** folder and in a **command prompt** from your 
@@ -61,11 +72,6 @@ to resolve the issue is to delete npm's **node_modules** folder and in a **comma
     npm install
 
 If there's still an issue we recommend deleting the solution folder and re-creating the VS.NET Template again.
-
-After it successfully completes you can **Rebuild + Run** the solution to see a working client/server 
-Hello World App:
-
-![](https://raw.githubusercontent.com/ServiceStackApps/typescript-react-template/master/img/default-app.png)
 
 ## Solution Structure
 
@@ -92,8 +98,8 @@ The primary **NetworkedShapeCreator** project contains the complete React Web Ap
 It includes `gulpfile.js` which provides the necessary Gulp tasks to bundle and optimize the Wep Application 
 ready for deployment.
 
-The primary Grunt Tasks you'll use to package and deploy your App are contained in **Alias Tasks** group
-which is easily runnable from VS .NET's 
+The primary Grunt Tasks you'll use to package and deploy your App are prefixed with a number and ordered at
+the top of VS .NET's 
 [Task Runner Explorer](https://visualstudiogallery.msdn.microsoft.com/8e1b4368-4afb-467a-bc13-9650572db708)
 which is built into VS 2015:
 
@@ -104,11 +110,12 @@ which is built into VS 2015:
  - **default** - The default task that builds and stages your application
  - **package-and-deploy** - Perform all tasks to build, stage and deploy your application
 
+You can double-click the task name to run that specified task.
+
 All other tasks below `package-and-deploy` starting with a `www-` prefix contain the individual granular tasks
-the high-level tasks above call upon to accomplish their respective tasks.
+the high-level tasks above call upon to accomplish their respective tasks. 
 
 ![](https://raw.githubusercontent.com/ServiceStackApps/typescript-react-template/master/img/gulp-task-runner-explorer.png)
-
 
 ### Preloading Dependencies
 
