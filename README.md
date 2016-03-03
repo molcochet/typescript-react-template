@@ -98,8 +98,8 @@ The primary **NetworkedShapeCreator** project contains the complete React Web Ap
 It includes `gulpfile.js` which provides the necessary Gulp tasks to bundle and optimize the Wep Application 
 ready for deployment.
 
-The primary Grunt Tasks you'll use to package and deploy your App are prefixed with a number and ordered at
-the top of VS .NET's 
+The primary Gulp Tasks you'll use to package and deploy your App are **prefixed with a number** in the logical
+order they're run in and sorted at the top of VS .NET's 
 [Task Runner Explorer](https://visualstudiogallery.msdn.microsoft.com/8e1b4368-4afb-467a-bc13-9650572db708)
 which is built into VS 2015:
 
