@@ -374,7 +374,7 @@ TypeScript `/src` folder using the `Add > TypeScript File` context menu item:
 
 Now in replace each file with the filename and contents below:
 
-### app.tsx
+#### [app.tsx](https://raw.githubusercontent.com/ServiceStackApps/typescript-react-template/master/src/NetworkedShapeCreator/NetworkedShapeCreator/src/app.tsx)
 
 ```csharp
 /// <reference path='../typings/browser.d.ts'/>
@@ -488,7 +488,7 @@ ReactDOM.render(
     document.getElementById("content"));
 ```
 
-### ColorPicker.tsx
+#### [ColorPicker.tsx](https://raw.githubusercontent.com/ServiceStackApps/typescript-react-template/master/src/NetworkedShapeCreator/NetworkedShapeCreator/src/ColorPicker.tsx)
 
 ```typescript
 /// <reference path='../typings/browser.d.ts'/>
@@ -585,7 +585,7 @@ const luminance = (color: string) => {
 export const isDark = (color: string) => luminance(color) < 100;
 ```
 
-### Connect.tsx
+#### [Connect.tsx](https://raw.githubusercontent.com/ServiceStackApps/typescript-react-template/master/src/NetworkedShapeCreator/NetworkedShapeCreator/src/Connect.tsx)
 
 ```typescript
 /// <reference path='../typings/browser.d.ts'/>
@@ -711,7 +711,7 @@ const filterUsers = (users, userId) =>
     users.filter(x => x.userId !== userId).sort((x,y) => x.userId.localeCompare(y.userId));
 ```
 
-### core.ts
+#### [core.ts](https://raw.githubusercontent.com/ServiceStackApps/typescript-react-template/master/src/NetworkedShapeCreator/NetworkedShapeCreator/src/core.ts)
 
 ```typescript
 /// <reference path='../typings/browser.d.ts'/>
@@ -775,7 +775,7 @@ export function bindAll() {
 }
 ```
 
-### Counter.tsx
+#### [Counter.tsx](https://github.com/ServiceStackApps/typescript-react-template/blob/master/src/NetworkedShapeCreator/NetworkedShapeCreator/src/Counter.tsx)
 
 ```typescript
 /// <reference path='../typings/browser.d.ts'/>
@@ -820,7 +820,7 @@ export default class Counter extends React.Component<IHelloWorldProps, any> {
 }
 ```
 
-### History.tsx
+#### [History.tsx](https://github.com/ServiceStackApps/typescript-react-template/blob/master/src/NetworkedShapeCreator/NetworkedShapeCreator/src/History.tsx)
 
 ```typescript
 /// <reference path='../typings/browser.d.ts'/>
@@ -872,7 +872,7 @@ export default class History extends React.Component<any, any> {
 }
 ```
 
-### reducers.ts
+#### [reducers.ts](https://raw.githubusercontent.com/ServiceStackApps/typescript-react-template/master/src/NetworkedShapeCreator/NetworkedShapeCreator/src/reducers.ts)
 
 ```typescript
 import { addShape, changeShape } from './reducers/shapeReducers';
@@ -892,7 +892,7 @@ export default {
 };
 ```
 
-### reducers/shapeReducers.ts
+#### [reducers/shapeReducers.ts](https://raw.githubusercontent.com/ServiceStackApps/typescript-react-template/master/src/NetworkedShapeCreator/NetworkedShapeCreator/src/reducers/shapeReducers.ts)
 
 ```typescript
 export const addShape = (state, action) => {
@@ -909,7 +909,7 @@ export const changeShape = (state, action) => {
 };
 ```
 
-### ShapeMaker.tsx
+#### [ShapeMaker.tsx](https://raw.githubusercontent.com/ServiceStackApps/typescript-react-template/master/src/NetworkedShapeCreator/NetworkedShapeCreator/src/ShapeMaker.tsx)
 
 ```typescript
 /// <reference path='../typings/browser.d.ts'/>
@@ -974,7 +974,7 @@ export default class ShapeMaker extends React.Component<any, any> {
 }
 ```
 
-### ShapeViewer.tsx
+#### [ShapeViewer.tsx](https://raw.githubusercontent.com/ServiceStackApps/typescript-react-template/master/src/NetworkedShapeCreator/NetworkedShapeCreator/src/ShapeViewer.tsx)
 
 ```typescript
 /// <reference path='../typings/browser.d.ts'/>
@@ -1042,7 +1042,7 @@ to:
 
     function applyMiddleware(...middlewares: Middleware[]): () => any;
 
-## default.html
+#### [default.html](https://raw.githubusercontent.com/ServiceStackApps/typescript-react-template/master/src/NetworkedShapeCreator/NetworkedShapeCreator/default.html)
 
 Since we have a completely different application we need to also replace `default.html` with the HTML below:
 
@@ -1091,7 +1091,7 @@ communications between users we need to enable
 [Server Events](https://github.com/ServiceStack/ServiceStack/wiki/Server-Events) by registering the
 `ServerEventsFeature` in our `AppHost.Configure()`:
 
-### AppHost.cs
+#### [AppHost.cs](https://raw.githubusercontent.com/ServiceStackApps/typescript-react-template/master/src/NetworkedShapeCreator/NetworkedShapeCreator/AppHost.cs)
 
 ```csharp
 public override void Configure(Container container)
@@ -1104,7 +1104,7 @@ public override void Configure(Container container)
 
 Then in the **NetworkedShapeCreator.ServiceModel** project add the Service Contracts for the 2 new Services:
 
-### ServerEvents.cs
+#### [ServerEvents.cs](https://raw.githubusercontent.com/ServiceStackApps/typescript-react-template/master/src/NetworkedShapeCreator/NetworkedShapeCreator.ServiceModel/ServerEvents.cs)
 
 ```csharp
 using System.IO;
@@ -1132,7 +1132,7 @@ namespace NetworkedShapeCreator.ServiceModel
 
 Then we just need to add the Services implementation in **NetworkedShapeCreator.ServiceInterface**
 
-### ReduxServices.cs
+#### [ReduxServices.cs](https://raw.githubusercontent.com/ServiceStackApps/typescript-react-template/master/src/NetworkedShapeCreator/NetworkedShapeCreator.ServiceInterface/ReduxServices.cs)
 
 ```csharp
 using NetworkedShapeCreator.ServiceModel;
