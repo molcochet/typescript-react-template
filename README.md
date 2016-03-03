@@ -1064,7 +1064,7 @@ Since we have a completely different application we need to also replace `defaul
     </style>
 </head>
 <body>
-    <h1>Example 9</h1>
+    <h1>Networked Shape Creator</h1>
     <div id="content"></div>
 
     <!-- build:js system.js -->
