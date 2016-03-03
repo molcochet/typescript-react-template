@@ -1188,8 +1188,8 @@ as well as a UserName and Password of a User that has permission to remote deplo
 
 ```json
 {
-    "iisApp": "NetworkedShapeCreator",
-    "serverAddress": "http://redux.servicestack.net/",
+    "iisApp": "vstest",
+    "serverAddress": "remote.server.org",
     "userName": "{WebDeployUserName}",
     "password" : "{WebDeployPassword}"
 }
