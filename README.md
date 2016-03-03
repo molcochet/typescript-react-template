@@ -1128,7 +1128,8 @@ namespace NetworkedShapeCreator.ServiceModel
         public string Selector { get; set; }
         public Stream RequestStream { get; set; }
     }
-}```
+}
+```
 
 Then we just need to add the Services implementation in **NetworkedShapeCreator.ServiceInterface**
 
