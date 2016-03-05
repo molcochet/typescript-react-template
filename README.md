@@ -1,16 +1,15 @@
-# [TypeScript React App (beta)](https://visualstudiogallery.msdn.microsoft.com/5bd40817-0986-444d-a77d-482e43a48da7)
-
 [![](https://raw.githubusercontent.com/ServiceStack/Assets/master/img/release-notes/typescript-react-jspm-banner.png)](https://visualstudiogallery.msdn.microsoft.com/5bd40817-0986-444d-a77d-482e43a48da7)
 
-ServiceStack's new TypeScript React Single Page App VS.NET template offers the current **Gold Standard** for 
-developing modern JavaScript Apps in VS.NET with the just released:
+# TypeScript React App (beta)
+
+ServiceStack's new [TypeScript React App VS.NET template](](https://visualstudiogallery.msdn.microsoft.com/5bd40817-0986-444d-a77d-482e43a48da7)) offers the current **Gold Standard** for developing modern JavaScript Apps in VS.NET with the just released:
  
   - [TypeScript 1.8](http://www.typescriptlang.org/) - Superset of JavaScript with optional typing, advanced language features and down-level ES5 support
   - [JSPM](http://jspm.io/) - JavaScript Package Manager supporting SystemJS modules and multiple npm and GitHub repositories 
   - [typings](https://github.com/typings/typings) - Package manager to search and install TypeScript definition files
   - [React](https://facebook.github.io/react/) - Simple, high-performance JavaScript UI Framework utilizing a Virtual DOM and Reactive Data flows
-  - [Redux](https://github.com/rackt/redux) - Predictable state manager for JavaScript Apps
-  
+  - [Gulp](http://gulpjs.com/) - Task runner for server and client packaging, bundling, minifying and deployments
+
 Providing a great base for the development of large-scale, JavaScript Apps that's further enhanced by a great 
 development experience within Visual Studio. 
 
