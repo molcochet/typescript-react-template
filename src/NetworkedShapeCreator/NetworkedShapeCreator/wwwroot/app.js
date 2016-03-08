@@ -18955,7 +18955,7 @@ define("npm:jquery@2.2.1.js", ["npm:jquery@2.2.1/dist/jquery.js"], function(main
 });
 
 })();
-System.registerDynamic("npm:ss-utils@0.1.2/ss-utils.js", ["npm:jquery@2.2.1.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:ss-utils@0.1.3/ss-utils.js", ["npm:jquery@2.2.1.js"], true, function($__require, exports, module) {
   ;
   var define;
   var global = this;
@@ -19383,6 +19383,8 @@ System.registerDynamic("npm:ss-utils@0.1.2/ss-utils.js", ["npm:jquery@2.2.1.js"]
         }).addClass('active').closest("li").addClass('active');
       });
     };
+    $.ss.eventSourceStop = false;
+    $.ss.eventOptions = {};
     $.ss.eventReceivers = {};
     $.ss.eventChannels = [];
     $.ss.eventSourceUrl = null;
@@ -19442,6 +19444,8 @@ System.registerDynamic("npm:ss-utils@0.1.2/ss-utils.js", ["npm:jquery@2.2.1.js"]
       });
     };
     $.ss.reconnectServerEvents = function(opt) {
+      if ($.ss.eventSourceStop)
+        return;
       opt = opt || {};
       var hold = $.ss.eventSource;
       var es = new EventSource(opt.url || $.ss.eventSourceUrl || hold.url);
@@ -19464,7 +19468,7 @@ System.registerDynamic("npm:ss-utils@0.1.2/ss-utils.js", ["npm:jquery@2.2.1.js"]
     };
     $.fn.handleServerEvents = function(opt) {
       $.ss.eventSource = this[0];
-      opt = opt || {};
+      $.ss.eventOptions = opt = opt || {};
       if (opt.handlers) {
         $.extend($.ss.handlers, opt.handlers);
       }
@@ -19503,6 +19507,7 @@ System.registerDynamic("npm:ss-utils@0.1.2/ss-utils.js", ["npm:jquery@2.2.1.js"]
                   var stopFn = $.ss.handlers["onStop"];
                   if (stopFn != null)
                     stopFn.apply($.ss.eventSource);
+                  $.ss.reconnectServerEvents({errorArgs: {error: 'CLOSED'}});
                   return;
                 }
                 $.ajax({
@@ -19547,16 +19552,16 @@ System.registerDynamic("npm:ss-utils@0.1.2/ss-utils.js", ["npm:jquery@2.2.1.js"]
   return module.exports;
 });
 
-System.registerDynamic("npm:ss-utils@0.1.2.js", ["npm:ss-utils@0.1.2/ss-utils.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:ss-utils@0.1.3.js", ["npm:ss-utils@0.1.3/ss-utils.js"], true, function($__require, exports, module) {
   ;
   var define;
   var global = this;
   var GLOBAL = this;
-  module.exports = $__require('npm:ss-utils@0.1.2/ss-utils.js');
+  module.exports = $__require('npm:ss-utils@0.1.3/ss-utils.js');
   return module.exports;
 });
 
-System.register("src/Connect.js", ["npm:react@0.14.7.js", "npm:jquery@2.2.1.js", "npm:ss-utils@0.1.2.js"], function(exports_1, context_1) {
+System.register("src/Connect.js", ["npm:react@0.14.7.js", "npm:jquery@2.2.1.js", "npm:ss-utils@0.1.3.js"], function(exports_1, context_1) {
   "use strict";
   var __moduleName = context_1 && context_1.id;
   var __extends = (this && this.__extends) || function(d, b) {
