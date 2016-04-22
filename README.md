@@ -1,6 +1,6 @@
 [![](https://raw.githubusercontent.com/ServiceStack/Assets/master/img/release-notes/typescript-react-jspm-banner.png)](https://visualstudiogallery.msdn.microsoft.com/5bd40817-0986-444d-a77d-482e43a48da7)
 
-# TypeScript React App (beta)
+# TypeScript React App
 
 ServiceStack's new [TypeScript React App VS.NET template](](https://visualstudiogallery.msdn.microsoft.com/5bd40817-0986-444d-a77d-482e43a48da7)) offers the current **Gold Standard** for developing modern JavaScript Apps in VS.NET with the just released:
  
