@@ -1,8 +1,6 @@
-﻿
-using ServiceStack;
-using ServiceStack.React.Models;
+﻿using ServiceStack.React.Models;
 
-namespace Northwind.ServiceInterface
+namespace ServiceStack.React.Services
 {
     public class TestService : Service
     {

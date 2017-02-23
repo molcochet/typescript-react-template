@@ -103,7 +103,7 @@ System.config({
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
-    "npm:ansi-styles@2.2.0": {
+    "npm:ansi-styles@2.2.1": {
       "color-convert": "npm:color-convert@1.0.0"
     },
     "npm:asn1.js@4.5.1": {
@@ -285,7 +285,7 @@ System.config({
       "lazy-cache": "npm:lazy-cache@1.0.3"
     },
     "npm:chalk@1.1.1": {
-      "ansi-styles": "npm:ansi-styles@2.2.0",
+      "ansi-styles": "npm:ansi-styles@2.2.1",
       "escape-string-regexp": "npm:escape-string-regexp@1.0.5",
       "has-ansi": "npm:has-ansi@2.0.0",
       "process": "github:jspm/nodelibs-process@0.1.2",

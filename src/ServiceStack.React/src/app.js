@@ -86,7 +86,7 @@ System.register(["react", "react-dom", "redux", "./reducers", "./ColorPicker", "
             ColorWrapper = __decorate([
                 core_1.reduxify(function (state) { return ({ color: state.color }); }, function (dispatch) { return ({ setColor: function (color) { return dispatch({ type: 'COLOR_CHANGE', color: color }); } }); })
             ], ColorWrapper);
-            ReactDOM.render(React.createElement("h2", null, "Preview"), document.getElementById("content"));
+            ReactDOM.render(React.createElement("h2", null, "Preview 2"), document.getElementById("content"));
         }
     };
 });

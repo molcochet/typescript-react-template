@@ -12,6 +12,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\img\**" />
+    <Content Remove="wwwroot\img\**" />
+    <EmbeddedResource Remove="wwwroot\img\**" />
+    <None Remove="wwwroot\img\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Update="wwwroot\**\*;web.config">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
@@ -36,11 +43,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\img\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\ServiceStack.React.Services\ServiceStack.React.Services.csproj" />
+    <ProjectReference Include="..\ServiceStack.React.Services\ServiceStack.React.Services.csproj" />
   </ItemGroup>
 
 </Project>

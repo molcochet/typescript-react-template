@@ -75,6 +75,6 @@ class ColorWrapper extends React.Component<any, any> {
 }
 
 ReactDOM.render(
-    <h2>Preview</h2>,
+    <h2>Preview 2</h2>,
     document.getElementById("content"));
 

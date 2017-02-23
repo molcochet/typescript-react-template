@@ -1,5 +1,5 @@
 {
-  "name": "NetworkedShapeCreator",
+  "name": "SERVICESTACKREACTTEST",
   "version": "0.0.1",
   "scripts": {
     "postinstall": "cmd /c wwwroot_build\\build.bat"

@@ -1,4 +1,12 @@
-﻿namespace ServiceStack.React.Core
+﻿using Funq;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+using ServiceStack.Admin;
+using ServiceStack.React.Services;
+
+namespace ServiceStack.React.Core
 {
     public class Startup
     {
