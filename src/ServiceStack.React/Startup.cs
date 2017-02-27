@@ -36,6 +36,7 @@ namespace ServiceStack.React.Core
 
         public override void Configure(Container container)
         {
+            SetConfig(new HostConfig{WebHostPhysicalPath = "~/.".MapProjectPath()});
             //container.Register<IDbConnectionFactory>(
             //    new OrmLiteConnectionFactory(MapProjectPath("~/App_Data/Northwind.sqlite"), SqliteDialect.Provider));
 

@@ -10,12 +10,15 @@
     <PackageTargetFallback>$(PackageTargetFallback);dotnet5.6;portable-net45+win8</PackageTargetFallback>
     <RootNamespace>ServiceStack.React.Core</RootNamespace>
   </PropertyGroup>
-
   <ItemGroup>
     <Compile Remove="wwwroot\img\**" />
     <Content Remove="wwwroot\img\**" />
     <EmbeddedResource Remove="wwwroot\img\**" />
     <None Remove="wwwroot\img\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\material.min.css" />
+    <None Include="wwwroot\material.min.css.map" />
   </ItemGroup>
 
   <ItemGroup>
@@ -25,11 +28,19 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore" Version="1.0.3" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics" Version="1.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.Server.IISIntegration" Version="1.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel" Version="1.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="1.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="1.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.Design" Version="1.0.2" />
     <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="1.1.0" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="1.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.0.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="1.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="1.0.0-msbuild3-final" />
     <PackageReference Include="ServiceStack.Text.Core" Version="1.0.36" />
     <PackageReference Include="ServiceStack.Interfaces.Core" Version="1.0.36" />
     <PackageReference Include="ServiceStack.Client.Core" Version="1.0.36" />

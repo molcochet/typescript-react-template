@@ -88,6 +88,14 @@
             .pipe(gulpReplace('<compilation debug="true" targetFramework="4.5">', '<compilation targetFramework="4.5">'))
             .pipe(gulp.dest(webRoot));
     });
+    gulp.task('www-copy-materialjs', function () {
+        return gulp.src('./src/material.js')
+            .pipe(gulp.dest(webRoot + 'lib/js/'));
+    });
+    gulp.task('www-copy-materialcss', function () {
+        return gulp.src('css/material.css')
+            .pipe(gulp.dest(webRoot + 'lib/css/'));
+    });
     gulp.task('www-copy-asax', function () {
         return gulp.src('./Global.asax')
             .pipe(newer(webRoot))
@@ -164,6 +172,8 @@
                     'www-copy-bin',
                     'www-copy-appdata',
                     'www-copy-webconfig',
+                    'www-copy-materialjs',
+                    'www-copy-materialcss',
                     'www-copy-asax',
                     'www-copy-deploy-files'
                 ],

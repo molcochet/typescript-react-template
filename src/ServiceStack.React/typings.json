@@ -7,5 +7,9 @@
     "react-redux": "github:DefinitelyTyped/DefinitelyTyped/react-redux/react-redux.d.ts#a513c4df6eb8505da8eef432891c8b69b73535d9",
     "redux": "github:DefinitelyTyped/DefinitelyTyped/redux/redux.d.ts#a820bbdead70913f0c750802b367ed54cb99b442",
     "ss-utils": "github:DefinitelyTyped/DefinitelyTyped/ss-utils/ss-utils.d.ts#229cb92825ec05c986dff721018b7130126f09a9"
+  },
+  "dependencies": {
+    "react": "registry:npm/react#15.0.1+20170104200836",
+    "react-mdl": "registry:dt/react-mdl#1.7.0+20170123203653"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "compileOnSave":  true,
+  "compileOnSave": true,
   "compilerOptions": {
     "noImplicitAny": false,
     "noEmitOnError": true,
@@ -10,6 +10,9 @@
     "jsx": "react",
     "experimentalDecorators": true
   },
+  "include": [
+    "src/**/*.tsx"
+  ],
   "exclude": [
     "typings",
     "node_modules",
